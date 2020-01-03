@@ -14,6 +14,7 @@ import { HeaderComponent } from './_components/navigation/header/header.componen
 import { FooterComponent } from './_components/navigation/footer/footer.component';
 // Common Components
 import { DashboardComponent } from './_components/pmjay/dashboard/dashboard.component';
+import { PmjayComponent } from './_components/pmjay/pmjay/pmjay.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DashboardComponent } from './_components/pmjay/dashboard/dashboard.comp
     ResetPasswordComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    PmjayComponent
   ],
   imports: [
     BrowserModule,
