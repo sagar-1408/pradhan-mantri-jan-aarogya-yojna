@@ -15,6 +15,8 @@ import { FooterComponent } from './_components/navigation/footer/footer.componen
 // Common Components
 import { DashboardComponent } from './_components/pmjay/dashboard/dashboard.component';
 import { PmjayComponent } from './_components/pmjay/pmjay/pmjay.component';
+// General Modules
+import { TabsModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { PmjayComponent } from './_components/pmjay/pmjay/pmjay.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
