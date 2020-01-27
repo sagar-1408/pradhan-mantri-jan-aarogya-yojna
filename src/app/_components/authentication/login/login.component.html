@@ -1,46 +1,47 @@
-<div class="container h-100">
-  <div class="d-flex justify-content-center h-100">
-    <div class="user_card">
-      <div class="d-flex justify-content-center">
-        <div class="brand_logo_container">
-          <img src="./assets/images/Ayushman-Bharat.png"
-            class="brand_logo" alt="Logo">
-        </div>
-      </div>
-      <div class="d-flex justify-content-center form_container">
-        <form>
-          <div class="input-group mb-3">
-            <div class="input-group-append">
-              <span class="input-group-text"><i class="fa fa-user"></i></span>
-            </div>
-            <input type="text" name="" class="form-control input_user" value="" placeholder="username">
-          </div>
-          <div class="input-group mb-2">
-            <div class="input-group-append">
-              <span class="input-group-text"><i class="fa fa-key"></i></span>
-            </div>
-            <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
-          </div>
-          <div class="form-group">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customControlInline">
-              <label class="custom-control-label" for="customControlInline">Remember me</label>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mt-3 login_container">
-            <button type="button" name="button" class="btn login_btn">Login</button>
-          </div>
-        </form>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
 
-      <div class="mt-4">
-        <div class="d-flex justify-content-center links">
-          Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-        </div>
-        <div class="d-flex justify-content-center links">
-          <a href="#">Forgot your password?</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digi e-Seva Admin Panel, Digi e-Seva Dashboard</title>
+  <link href="./assets/css/login.css" rel="stylesheet" media="screen">
+  <link href="./assets/fonts/icomoon/icomoon.css" rel="stylesheet">
+</head>
+
+<body>
+  <form class="mt-5">
+    <div class="col-md-6 col-sm-6 col-md-push-3 col-sm-push-3" id="login-wrapper">
+      <div id="login_header"><img src="./assets/img/logo.png" class="logo" alt="Admin Dashboard"></div>
+      <h5>Sign in to access to your Digi e-Seva control panel.</h5>
+      <div id="inputs">
+        <div class="form-block">
+          <input placeholder="Email" type="email"> <i class="fa fa-envelope"></i></div>
+        <div class="form-block">
+          <input placeholder="Password" type="password"> <i class="fa fa-eye"></i></div>
+        <a href="http://www.digieseva.in/" class="redlink"><span style="color: #fdbc2e;">Forgot
+            Password</span></a>
+        <input value="Login" type="submit">
+        <h5> Not Registered User ?<a href="http://www.digieseva.in/" class="redlink"><span style="color: #fdbc2e;">
+              Register Now</span></a>
+        </h5>
       </div>
     </div>
-  </div>
-</div>
+    <div style="width: 350px;margin: -3px 100px 0px auto;padding: 22px 0 0px;text-align: center;">
+      <h4>
+        <p style="font-size: 15px;"><strong style="color: #fdbc2e;">Digi e-Pay</strong><span class="fw-light"> is
+            available on</span>
+        </p>
+      </h4>
+      <div class="device-box align-left">
+        <a class="google-play-badge store-box col-xs-6" target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.dbs.in.digitalbank&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+            src="./assets/img/google_play_badge.png" alt="Android"
+            style="max-width: 60%;margin-top: 0px;margin-bottom: 0px; margin-left: 115px;"></a>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

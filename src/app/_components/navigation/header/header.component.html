@@ -1,49 +1,99 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color: #60a3bc;">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="#">
-      <img src="./assets/images/logo.png" height="5%" width="15%" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item" routerActiveLink="active">
-          <a class="nav-link" routerLink="/dashboard">Home
-            <span class="sr-only">(current)</span>
-          </a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digi e-Seva Admin Panel, Digi e-Seva Dashboard</title>
+  <!-- <link href="./assets/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <link href="./assets/css/main.css" rel="stylesheet" media="screen">
+  <link href="./assets/fonts/icomoon/icomoon.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="./assets/img/logo.png" alt="Logo">
+      <!--<h6 style="color: #35404f;margin-top: 15px;margin-bottom: -15px;">( IS/ISO 2008-9001 Certified Organisation )</h6>-->
+    </div>
+    <div class="pull-right">
+      <ul id="header-actions" class="clearfix">
+        <li class="list-box dropdown">
+          <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><span
+              class="info-label">7</span> <i class="icon-notifications_active info-icon text-success"></i></a>
+          <ul class="dropdown-menu imp-notify">
+            <li>
+              <div class="thumb"><img src="./assets/img/user4.png" alt="Admin Dashboard"></div>
+              <div class="details">
+                <strong>Wilson Kewis</strong>
+                <p>The best dashboard design I have ever seen. Good luck with sales.</p>
+                <small class="date">Today at 10:10 pm - 21.12.2016</small>
+              </div>
+            </li>
+            <li>
+              <div class="thumb"><img src="./assets/img/user7.png" alt="Admin Dashboard"></div>
+              <div class="details">
+                <strong>Justin Mezzell</strong>
+                <p>To keep your account secure, we need to revalidate your account.</p>
+                <small class="date">3 days ago at 2:30 pm</small>
+              </div>
+            </li>
+            <li>
+              <div class="thumb"><img src="./assets/img/user1.png" alt="Admin Dashboard"></div>
+              <div class="details">
+                <strong>Shawn Ankith</strong>
+                <p>Contact you via phone with support for recent purchases and product information.</p>
+                <small class="date">7 days ago at 5:15 pm</small>
+              </div>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item" routerActiveLink="active">
-          <a class="nav-link" routerLink="/dashboard">About</a>
-        </li>
-        <li class="nav-item" routerActiveLink="active">
-          <a class="nav-link" routerLink="/dashboard">Services</a>
-        </li>
-        <li class="nav-item" routerActiveLink="active">
-          <a class="nav-link" routerLink="/dashboard">Contact</a>
-        </li>
-        <!-- <li class="nav-item dropdown" routerActiveLink="active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Actions
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" [routerLink]="'/accounts'"> Accounts </a>
-            <a class="dropdown-item" [routerLink]="'/create-account'"> Create Account </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" [routerLink]="'/contacts'"> Contacts </a>
-            <a class="dropdown-item" [routerLink]="'/create-contact'"> Create Contact </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" [routerLink]="'/leads'"> Leads </a>
-            <a class="dropdown-item" [routerLink]="'/create-lead'"> Create Lead </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" [routerLink]="'/opportunities'"> Opportunities </a>
-            <a class="dropdown-item" [routerLink]="'/create-opportunity'"> Create Opportunity </a>
+        <li class="list-box dropdown">
+          <a id="drop10" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><span
+              class="info-label">4</span> <i class="icon-circle-check info-icon text-warning"></i></a>
+          <div class="dropdown-menu">
+            <section class="todo">
+              <fieldset class="todo-list"><label class="todo-list-item"><input type="checkbox" class="todo-list-cb">
+                  <span class="todo-list-mark"></span> <span class="todo-list-desc">Fix UI Bug</span> <small
+                    class="scheduled">Scheduled for 24th Dec, Assigned to Shawn.</small></label><label
+                  class="todo-list-item"><input type="checkbox" class="todo-list-cb"> <span
+                    class="todo-list-mark"></span>
+                  <span class="todo-list-desc">Send all Documents</span> <small class="scheduled">Scheduled for 24th
+                    Dec,
+                    Assigned to Leena.</small></label><label class="todo-list-item"><input type="checkbox"
+                    class="todo-list-cb"> <span class="todo-list-mark"></span> <span class="todo-list-desc">Attend
+                    Wedding
+                    Party</span> <small class="scheduled">Scheduled on 10th Dec, Assigned to Mark.</small></label><label
+                  class="todo-list-item"><input type="checkbox" class="todo-list-cb" checked="checked"> <span
+                    class="todo-list-mark"></span> <span class="todo-list-desc">Meet Mr.James</span> <small
+                    class="scheduled">Completed on 5th Dec, Assigned to Robin.</small></label><label
+                  class="todo-list-item"><input type="checkbox" class="todo-list-cb overdue" checked="checked"> <span
+                    class="todo-list-mark"></span> <span class="todo-list-desc">Read Turning Points</span> <small
+                    class="scheduled">Overdue 12 days, Assigned to Wincy.</small></label></fieldset>
+            </section>
           </div>
-        </li> -->
+        </li>
+        <li class="list-box user-admin dropdown">
+          <div class="admin-details">
+            <div class="name">Shawn</div>
+            <div class="designation">System Admin</div>
+          </div>
+          <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i
+              class="icon-account_circle"></i></a>
+          <ul class="dropdown-menu sm">
+            <li class="dropdown-content"><a href="#"><i class="icon-warning2"></i>Update Password<br><span>Your password
+                  will expire in 7 days.</span></a> <a href="profile.html">Edit Profile</a> <a
+                href="forgot-pwd.html">Change Password</a> <a href="Correction in PAN Card.html">Settings</a> <a
+                href="lock-screen.html">Lock Screen</a><a href="login.html">Logout</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
-  </div>
-</nav>
+    <a href="comments.html" class="support">Support</a>
+    <div class="custom-search"><input type="text" class="search-query" placeholder="Search here ..."> <i
+        class="icon-search4"></i></div>
+  </header>
+</body>
+
+</html>
